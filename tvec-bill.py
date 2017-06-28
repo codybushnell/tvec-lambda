@@ -117,8 +117,8 @@ def lambda_handler(event, context):
         ]
     )
     text_estimated_bill(
-      os.environ['twilio_account'], 
-      os.environ['twilio_token'], 
+      os.environ['twilio_account'],
+      os.environ['twilio_token'],
       daily_usages.mean() * 31 * .12,
       os.environ['to_number'],
       os.environ['twilio_number']
